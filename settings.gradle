@@ -1,2 +1,3 @@
 rootProject.name = 'java-exceptions'
 include 'task01'
+include 'task02'
