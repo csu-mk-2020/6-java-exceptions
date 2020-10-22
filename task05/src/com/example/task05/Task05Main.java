@@ -14,6 +14,8 @@ public class Task05Main {
             s = readFile(pathToFile);
             System.out.println(s);
         } catch (FileNotFoundException e) {
+            // Интересно, что тесты принимают только вариант \n, но не принимают \r\n, что вызывает ошибку при
+            // запуске тестов в случае использования System.out.println() на Windows.
             System.out.print("файл \"" + pathToFile + "\" не найден\n");
         } catch (IOException e) {
             System.out.print("произошла ошибка при чтении файла \"" + pathToFile + "\"\n");
