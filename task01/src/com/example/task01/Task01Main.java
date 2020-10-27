@@ -11,5 +11,7 @@ public class Task01Main {
 
     static void codeWithNPE() {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        Object object = null;
+        object.equals(null);
     }
 }
