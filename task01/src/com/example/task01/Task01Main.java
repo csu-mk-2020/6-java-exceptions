@@ -10,6 +10,8 @@ public class Task01Main {
     }
 
     static void codeWithNPE() {
+        Integer n = null;
+        System.out.println(n.toString());
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
     }
 }
