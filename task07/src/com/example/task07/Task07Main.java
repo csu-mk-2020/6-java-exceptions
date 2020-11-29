@@ -14,11 +14,15 @@ public class Task07Main {
     public String getExceptionType() {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
         try {
-            processor.process(); //todo вы можете заменить реализацию этого метода для ручного дебага
-        } catch (Exception e) {
+            processor.process();
+        } catch (Throwable e) {
+            if (e instanceof RuntimeException || e instanceof Error)
+                return "unchecked";
+            else
+                return "checked";
 
         }
-        return null;
+        return "none";
     }
 
 }
