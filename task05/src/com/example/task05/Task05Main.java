@@ -23,7 +23,6 @@ public class Task05Main {
     public static String readFile(String pathToFile) throws IOException {
         FileReader fileReader = new FileReader(pathToFile);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
-
         StringBuilder stringBuilder = new StringBuilder();
         String currentLine;
         while ((currentLine = bufferedReader.readLine()) != null) {
